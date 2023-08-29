@@ -1,0 +1,38 @@
+/* NavBar.css */
+.nav {
+    background-color: #ffffff;
+    padding: 10px;
+    position: sticky;
+    padding: 2rem;
+    height: 5vh;
+    /* position: sticky;
+    top: 0;
+    z-index: 100; */
+    box-shadow: 1px 1px 11px 2px #b6b7da;
+  }
+  
+  .list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .listItem {
+    margin: 0 15px;
+  }
+  .listItem :hover{
+    text-shadow: 1px 1px 1px #8f90b0;
+  }
+  .link {
+    color: #8f90b0;
+    text-decoration: none;
+
+  }
+
+  .img{
+    height:88vh;
+    width: 100%;
+  }

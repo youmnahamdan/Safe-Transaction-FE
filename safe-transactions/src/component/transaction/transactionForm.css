@@ -6,7 +6,7 @@
   /* margin: 20px; */
   font-family: cursive;
   /* background-color: red; */
-  height: 100vh;
+  /* height: 100vh; */
 }
 h2{
   letter-spacing: 0.3em;
@@ -58,13 +58,30 @@ input {
   padding: 10px 20px;
   border-radius: 15px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-bottom: 2rem;
   width: 10rem;
   color: black;
   font-weight: bolder;
   border: solid black 2px;
   letter-spacing: 0.3em;
+
 }
 .btn>button:hover{
   box-shadow: 1px 1px 12px 1px #d1c292;
+}
+.result{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.result >.r{
+  background: rgb(253,239,190);
+  background: linear-gradient(100deg, rgba(253,239,190,1) 0%, rgba(130,217,113,1) 70%); 
+  width: 10rem;
+  height: 2rem;
+  padding: 0.5rem;
+  margin: 1rem;
+border-radius: 50px;
+text-align: center;
 }

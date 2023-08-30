@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './transactionForm.css'; // Import your custom CSS for styling
 
 const TransactionForm = () => {
+    const [result, setResult] = useState(''); // Initialize result state with an empty string
+
     const [formData, setFormData] = useState({
         cardType: '',
         channel: '',
@@ -57,6 +59,8 @@ const TransactionForm = () => {
             if (response.ok) {
                 const responseData = await response.json();
                 console.log('Transaction created successfully:', responseData.message);
+                setResult(responseData.prediction); // Adjust the property name as per your backend response
+
                 // You can reset the form data or provide success feedback to the user
                 setFormData({
                     cardType: '',
@@ -225,9 +229,19 @@ const TransactionForm = () => {
                     </button>
                 </div>
             </div>
-            {/* <div className="result">
-                result :
-            </div> */}
+            <div className="result">
+                Result:
+
+
+                {result}
+                <div className="r">
+                    {result ? (
+                        { result }
+                    ) : (
+                        ""
+                    )}
+                </div>
+            </div>
         </>
     );
 };

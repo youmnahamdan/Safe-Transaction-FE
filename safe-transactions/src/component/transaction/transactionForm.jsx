@@ -14,7 +14,7 @@ const TransactionForm = () => {
         merchantCountry: '',
         merchantActivity: '',
         clientCode: '',
-        amountUSD: '',
+        amountUSD: 0,
     });
 
 
@@ -34,21 +34,21 @@ const TransactionForm = () => {
         }
 
         const newTransaction = {
-            transactionDate: formData.transactionDate,
-            cardType: formData.cardType,
-            channel: formData.channel,
-            transactionType: formData.transactionType,
-            transactionTypeGroup: formData.transactionTypeGroup,
-            entryMode: formData.entryMode,
-            outletId: formData.outletId,
-            merchantCountry: formData.merchantCountry,
-            merchantActivity: formData.merchantActivity,
-            clientCode: formData.clientCode,
-            amountUSD: formData.amountUSD,
+            "Card Type": formData.cardType,
+            "Channel ": formData.channel,
+            "Transaction Type": formData.transactionType,
+            "Transaction Type Group": formData.transactionTypeGroup,
+            "Entry Mode": formData.entryMode,
+            "Outlet ID": formData.outletId,
+            "Merchant Country": formData.merchantCountry,
+            "Merchant Activity ": formData.merchantActivity,
+            "Client Code": formData.clientCode,
+            "Amount USD": formData.amountUSD
         };
+        
 
         try {
-            const response = await fetch('http://localhost:3002/transaction/new', {
+            const response = await fetch('http://localhost:5000/fraud', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

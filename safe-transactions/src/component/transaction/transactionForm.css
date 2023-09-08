@@ -8,10 +8,12 @@
   /* background-color: red; */
   /* height: 100vh; */
 }
-h2{
+
+h2 {
   letter-spacing: 0.3em;
 
 }
+
 .custom-form {
   display: flex;
   gap: 50px;
@@ -38,19 +40,20 @@ input {
   border: 1px solid #ccc;
   border-radius: 15px;
   margin-top: 4px;
-  background-color: #dddddd; 
+  background-color: #dddddd;
   padding-left: 1rem;
   font-family: cursive;
 
 }
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   /* background-color: red; */
   /* width: 2rem; */
 
 }
+
 .btn>button {
   background-color: #fff0c0;
   color: white;
@@ -66,22 +69,24 @@ input {
   letter-spacing: 0.3em;
 
 }
-.btn>button:hover{
+
+.btn>button:hover {
   box-shadow: 1px 1px 12px 1px #d1c292;
 }
-.result{
+
+.result {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.result >.r{
-  background: rgb(253,239,190);
-  background: linear-gradient(100deg, rgba(253,239,190,1) 0%, rgba(130,217,113,1) 70%); 
+
+.result>.r {
+  background: rgb(253, 239, 190);
+  background: linear-gradient(100deg, rgb(245, 239, 218) 0%, #ebcf76 70%);
   width: 10rem;
   height: 2rem;
   padding: 0.5rem;
   margin: 1rem;
-border-radius: 50px;
-text-align: center;
+  border-radius: 50px;
 }
